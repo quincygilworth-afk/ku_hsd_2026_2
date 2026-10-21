@@ -1,3 +1,8 @@
+//resets only whern page is refreshed
+const navType = performance.getEntriesByType("navigation")[0]?.type;
+if (navType === "reload") {
+  localStorage.removeItem("gunterOrders");
+}
 // Items available for purchase
 const purchaseButtons = {
     "Sword_Purchase": "Sword",
