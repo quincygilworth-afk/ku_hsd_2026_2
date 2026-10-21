@@ -14,8 +14,8 @@ body{
     background-image: url(Background2.png);
 }
 #Clicker{
-    display: block; 
-    margin:0 auto;
+    display: block; /* had help from Ai to figure out how to center it*/
+    margin:0 auto; /* had help from Ai to figure out how to center it*/
     padding: 48px;
     background-color: gray;
 }
