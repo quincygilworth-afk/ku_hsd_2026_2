@@ -7,10 +7,64 @@
     </head>
     <body>
         <h1>Welcome To Gunter's Mining Game</h1>
-        <h2> Click The Button</h2>
+        <h2> Click The Button : <span id="mine">0</span></h2>
+        <p id="CoalMessage" style="display: none;">
+    You mined a piece of coal!
+</p>
+<p id="IronMessage" style="display: none;">
+    Yo yo yo u just got iron twin!
+</p>
+<p id="GoldMessage" style="display: none;">
+    You just mined gold!
+</p>
+<p id="EmeraldMessage" style="display: none;">
+    Green green green, you just mined emerald!
+</p>
+<p id="DiamondMessage" style="display: none;">
+    Omg you just got some diamonds, now go and do something supper tuff like get diamond grill everyone will think you're so cool!
+</p>
+<p id="RadiumMessage" style = "display: none;">
+    Hey hey hey you just got radium! You cannot mine any further because you might die of radium poisoning :/
+</p>
         <button id="Clicker"></button>
         <a href="index.html">
         <button id="Return">Return to Store</button>
         </a>
     </body>
 </html>
+
+<script> 
+    let mine = 100;  // keeps track of total mine
+
+    function updateTotalMine(){
+        mine --;
+        document.getElementById("mine").textContent = mine;
+
+        if (mine == 90){
+            document.getElementId("CoalMessage").style.display = "block";
+            alert("You mined a piece of coal!");
+        }
+        if (mine == 80){
+            document.getElementId("IronMessage").style.display = "block";
+            alert("Yo yo yo u just got iron twin!");
+        }
+
+        if (mine == 65){
+            document.getElementId("GoldMessage").style.display = "block";
+            alert("You just mined gold!");
+        }
+        if (mine == 50){
+            document.getElementId("GoldMessage").style.display = "block";
+            alert("Green green green, you just mined emerald!");
+        }
+        if (mine == 25){
+            document.getElementId("GoldMessage").style.display = "block";
+            alert("Omg you just got some diamonds, now go and do something supper tuff like get diamond grill everyone will think you're so cool!");
+        }
+        if (mine == 0){
+            document.getElementId("GoldMessage").style.display = "block";
+            alert("Hey hey hey you just got radium! You cannot mine any further because you might die of radium poisoning :/");
+        }
+        
+    }
+</script>
