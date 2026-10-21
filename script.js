@@ -31,7 +31,11 @@ for (const buttonId in purchaseButtons) {
 
             saveOrders(orders);
 
-            alert(purchaseButtons[buttonId] + " added to your orders!");
+            // orders.length is this new order's position in the queue
+            alert(purchaseButtons[buttonId] + " added to your orders! You are #" + orders.length + " in line.");
+
+            // refresh the queue display so the new order shows up
+            displayQueue("queue-list");
         });
     }
 }
@@ -78,3 +82,37 @@ displayOrders("todo-list", true);
 
 // Gunter's page: show orders with delete buttons
 displayOrders("gunter-orders", true);
+
+// Order Queue: show every order and its position in line
+// (the orders array in localStorage IS the queue: first order = #1 in line)
+function displayQueue(listId) {
+    const list = document.getElementById(listId);
+
+    if (!list) return;
+
+    function render() {
+        const orders = getOrders();
+        list.innerHTML = "";
+
+        if (orders.length === 0) {
+            const li = document.createElement("li");
+            li.textContent = "The queue is empty! Order something to be first in line.";
+            list.appendChild(li);
+            return;
+        }
+
+        orders.forEach(function (order, index) {
+            const li = document.createElement("li");
+            const position = index + 1; // arrays start at 0, but lines start at 1
+
+            li.textContent = "#" + position + " in line: " + order.item;
+
+            list.appendChild(li);
+        });
+    }
+
+    render();
+}
+
+// Main page: show the queue
+displayQueue("queue-list");
