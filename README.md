@@ -17,3 +17,9 @@ The game on page two is called: "Gunter's Game". It is a clicking game where you
 ## Usage:
 
 On the store front page you need to click the button under the desired item to add that item to the queue. You can also then click the go to game button to go to the game page. There you click the gray square to make the count go down. The count represents your mining progress. As you go down, you will encounter resources and precious items. You may also click the go to main page to return to the store-front.
+
+## Team Contibutions:
+
+Tarek: game.html, index.html, styles.css, game.css
+Amelia: java script within html files (Created the game on the game.html)
+Quincy: Scipt.js (logic for queue)
