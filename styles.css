@@ -14,33 +14,33 @@ body{
 
 /* This modifies the sword image*/
 .SwordGroup img{
-    display: block; /* makes the sword next item indent (which is the sword button)*/
+    display: flex; /* makes the sword next item indent (which is the sword button)*/
 }
 .SwordGroup button{
     padding: adjust; /* adjusts how tall the button is automatically*/
-    align-items: center; /* aligns it with image*/
+    align-items: flex-start; /* aligns it with image*/
 }
 /*code above for sword are repeeated for plate amror, chain mail, and cooking pot*/
 .PlateArmorGroup img{
-    display: block;
+    display: flex;
 }
 .PlateArmorGroup button{
     padding: adjust;
-    align-items: center;
+    align-items: flex-start;
 }
 .ChainMailGroup img{
-    display: block;
+    display: flex;
 }
 .ChainMailGroup button{
     padding: adjust;
-    align-items: center;
+    align-items: flex-start;
 }
 .CookingPotGroup img{
-    display: block;
+    display: flex;
 }
 .CookingPotGroup button{
     padding: adjust;
-    align-items: center;
+    align-items: flex-start;
 }
 /*This edits all the pictures and buttons*/
 .AllItems{
@@ -78,4 +78,3 @@ p{background-color:antiquewhite;
 h2{background-color:antiquewhite;
     display: inline-block;
     }
-    
