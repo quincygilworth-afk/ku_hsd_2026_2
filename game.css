@@ -1,38 +1,47 @@
+/* modifies h1*/
 h1{
     color: black;
     font-size: 48px;
     font-family: fantasy;
     text-align: center;
 }
+/* modifies h2*/
 h2{
     color: black;
     font-size: 36px;
     font-family: fantasy;
     text-align: center;
 }
+/* body(background in this case)*/
 body{
     background-image: url(Background2.png);
 }
+/* modifies clicker button*/
 #Clicker{
     display: block; /* had help from Ai to figure out how to center it*/
     margin:0 auto; /* had help from Ai to figure out how to center it*/
     padding: 48px;
     background-color: gray;
 }
+/* modifies return to home page button*/
 #Return{
     display: block;
     margin:0 auto;
     padding: 32px;
     font-size: 28px;
-    border-radius: 999px;
+    border: 2px solid rgb(6, 6, 6); /*sets border color*/
+    border-radius: 5px; 
     background-color:rgb(113, 84, 1);
 
 }
+/* modifies inventory box*/
+/* the .Inv portion was written by an author and Ai and also edited by author*/
 .Inv {
-  height: 350px;
-  overflow-y: auto;
+  height: 350px;  /* modifies height of text box*/
+  overflow-y: auto;/*makes it so that if the inventory text overflows, you can scroll down*/
 }
+/* modifies paragraph(in this case the inventory text)*/
 p{
-    color: white;
+    color: white; 
     font-size: 24px;
 }
