@@ -7,20 +7,18 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!---puts the different text and titles on the page-->
+    
     <h1> Welcome to Gunter's Forge</h1>
     <h2>Gunter's To - Do List: <span id="OrderCount">0</span></h2>
     <div class="OrderCounts">
      <p id="CouponMessage" style="display: none;">
     Huzzah traveler! Ye hath earneth a coupon for thy investment in five total of my artisan goods!
 </p>
-<!--creates a number that displays the count of each item ordered-->
     <p>Swords ordered: <span id="SwordCount">0</span></p>
     <p>Plate Armor ordered: <span id="PlateArmorCount">0</span></p>
     <p>Chain Mail ordered: <span id="ChainMailCount">0</span></p>
     <p>Cooking Pots ordered: <span id="CookingPotCount">0</span></p>
 </div>
-<!---creates a section for all the items available for purchase, and puts the png images on the page-->
     <div class="AllItems">
     <div class="SwordGroup">
     <img src="Sword.png"
@@ -46,6 +44,7 @@
 </a>
 </body>
 <script>
+    // keep track of total orders on Gunter's ToDo List
     let orderCount = 0;
 
     // Keep track of each item's orders
@@ -57,22 +56,25 @@
     function updateTotalOrders() {
         orderCount++;
 
-        document.getElementById("OrderCount").textContent = orderCount;
+        document.getElementById("OrderCount").textContent = orderCount; // gets the element order
+        // count from html, the adds the text from
+        // the omg youll gen never believe but it assigns the text to the variable ordercount
 
         // Show the coupon message when total orders reach 5
         if (orderCount === 5) {
             document.getElementById("CouponMessage").style.display = "block";
 
-            alert("Congratulations! You've earned a coupon!");
+            alert(" Huzzah traveler! Ye hath earneth a coupon for thy investment in five total of my artisan goods!");
         }
     }
 
     document.getElementById("Sword_Purchase").addEventListener("click", function() {
-        swordCount++;
+        swordCount++; //*addEventListener tells the function to update the element each
+        //time the sword button is clicked 
         document.getElementById("SwordCount").textContent = swordCount;
-        updateTotalOrders();
+        updateTotalOrders();//updates total orders at the end 
     });
-
+// the we rinse and repeat with all the other items up for code
     document.getElementById("PlateArmor_Purchase").addEventListener("click", function() {
         plateArmorCount++;
         document.getElementById("PlateArmorCount").textContent = plateArmorCount;
