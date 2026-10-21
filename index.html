@@ -46,7 +46,11 @@
 <button id="Game"> Go To Game</button>
 </a>
 </div>
-</body>
+<div class="OrderQueue">
+    <h2> Order Queue: </h2>
+    <ol id="queue-list"></ol>
+</div>
+
 <script>
     // keep track of total orders on Gunter's ToDo List
     let orderCount = 0;
@@ -99,4 +103,7 @@
     // The previous code was developed by author and ai language model and reviewed and edited by the author. 
 
 </script>
+    <!-- loads the order/queue logic from script.js (must load after the inline script above) -->
+    <script src="script.js"></script>
+</body>
 </html>
