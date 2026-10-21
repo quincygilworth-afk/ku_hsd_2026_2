@@ -23,3 +23,4 @@ On the store front page you need to click the button under the desired item to a
 Tarek: game.html, index.html, styles.css, game.css
 Amelia: java script within html files (Created the game on the game.html)
 Quincy: Scipt.js (logic for queue)
+All members: helped think through logic and debug eachothers code, and helped add comments to eachothers code to clarify unclear sections
