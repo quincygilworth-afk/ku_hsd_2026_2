@@ -9,6 +9,7 @@
 <body>
     
     <h1> Welcome to Gunter's Forge</h1>
+    <h2>Orders: <span id="OrderCount">0</span></h2>
     <div class="AllItems">
     <div class="SwordGroup">
     <img src="Sword.png"
@@ -35,4 +36,17 @@
 <button id="ToDoList">Gunter's To-Do List</button>
 </a>
 </body>
+<script>
+    let orderCount = 0;
+
+    function addOrder() {
+        orderCount++;
+        document.getElementById("OrderCount").textContent = orderCount;
+    }
+
+    document.getElementById("Sword_Purchase").addEventListener("click", addOrder);
+    document.getElementById("PlateArmor_Purchase").addEventListener("click", addOrder);
+    document.getElementById("ChainMail_Purchase").addEventListener("click", addOrder);
+    document.getElementById("CookingPot_Purchase").addEventListener("click", addOrder);
+</script>
 </html>
