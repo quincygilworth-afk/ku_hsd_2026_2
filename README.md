@@ -24,3 +24,6 @@ Tarek: game.html, index.html, styles.css, game.css
 Amelia: java script within html files (Created the game on the game.html)
 Quincy: Scipt.js (logic for queue)
 All members: helped think through logic and debug eachothers code, and helped add comments to eachothers code to clarify unclear sections
+
+## AI usage
+We used ai to review our code written in styles.css and game.html. Then, we used ai to suggest revisions in those sections. We used ai to help write our script.js and index.html and then reviewed and edited it ourselfs, making appropriate changes where need. 
