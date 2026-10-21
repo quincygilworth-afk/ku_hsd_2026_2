@@ -78,4 +78,19 @@ p{background-color:antiquewhite;
 h2{background-color:antiquewhite;
     display: inline-block;
     }
+.gotogame {
+    position: relative; /* had clarifications from gemini on how to push button to right*/
+    width: 100%;        /* had clarifications from gemini on how to push button to right*/
+    height: 100px;     /* had clarifications from gemini on how to push button to right*/
+}
+
+
+.gotogame button {
+    position: absolute; /* had clarifications from gemini on how to push button to right*/
+    right: 32px;       /* had clarifications from gemini on how to push button to right*/
+    padding: 32px;
+    font-size: 28px;
+    border-radius: 999px;
+    background-color: rgb(182, 82, 0);
+}
     
