@@ -9,7 +9,7 @@
 <body>
     
     <h1> Welcome to Gunter's Forge</h1>
-    <h2>Total Orders: <span id="OrderCount">0</span></h2>
+    <h2>Gunter's To - Do List: <span id="OrderCount">0</span></h2>
     <div class="OrderCounts">
     <p>Swords ordered: <span id="SwordCount">0</span></p>
     <p>Plate Armor ordered: <span id="PlateArmorCount">0</span></p>
@@ -51,7 +51,7 @@
     let chainMailCount = 0;
     let cookingPotCount = 0;
 
-    function updateTotalOrders() {
+    function updateGuntersToDoList() {
         orderCount++;
         document.getElementById("OrderCount").textContent = orderCount;
     }
