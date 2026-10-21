@@ -28,3 +28,11 @@ body{
     background-color:rgb(113, 84, 1);
 
 }
+.Inv {
+  height: 350px;
+  overflow-y: auto;
+}
+p{
+    color: white;
+    font-size: 24px;
+}
