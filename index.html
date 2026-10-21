@@ -48,6 +48,37 @@
     // Keep track of each item's orders
     let swordCount = 0;
     let plateArmorCount = 0;
+    let chainMailCount = 0;
+    let cookingPotCount = 0;
+
+    function updateGuntersToDoList() {
+        orderCount++;
+        document.getElementById("OrderCount").textContent = orderCount;
+    }
+
+    document.getElementById("Sword_Purchase").addEventListener("click", function() {
+        swordCount++;
+        document.getElementById("SwordCount").textContent = swordCount;
+        updateTotalOrders();
+    });
+
+    document.getElementById("PlateArmor_Purchase").addEventListener("click", function() {
+        plateArmorCount++;
+        document.getElementById("PlateArmorCount").textContent = plateArmorCount;
+        updateTotalOrders();
+    });
+
+    document.getElementById("ChainMail_Purchase").addEventListener("click", function() {
+        chainMailCount++;
+        document.getElementById("ChainMailCount").textContent = chainMailCount;
+        updateTotalOrders();
+    });
+
+    document.getElementById("CookingPot_Purchase").addEventListener("click", function() {
+        cookingPotCount++;
+        document.getElementById("CookingPotCount").textContent = cookingPotCount;
+        updateTotalOrders();
+    });
     let orderCount = 0;
 
 // Keep track of each item's orders
@@ -68,7 +99,7 @@ const prices = {
 let discountAvailable = false;
 const discountRate = 0.10; // 10%
 
-function updateGuntersToDoList() {
+function updateTotalOrders() {
     orderCount++;
     document.getElementById("OrderCount").textContent = orderCount;
 }
