@@ -1,3 +1,4 @@
+localStorage.removeItem("gunterOrders"); //resets list 
 // Items available for purchase
 const purchaseButtons = {
     "Sword_Purchase": "Sword",
