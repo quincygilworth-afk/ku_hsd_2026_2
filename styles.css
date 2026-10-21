@@ -15,10 +15,12 @@ body{
 /* This modifies the sword image*/
 .SwordGroup img{
     display: block; /* makes the sword next item indent (which is the sword button)*/
+    margin-left: 50px;
 }
 .SwordGroup button{
     padding: adjust; /* adjusts how tall the button is automatically*/
     align-items: center; /* aligns it with image*/
+    margin-left: 70px; /* centers the button*/
 }
 /*code above for sword are repeeated for plate amror, chain mail, and cooking pot*/
 .PlateArmorGroup img{
@@ -27,6 +29,8 @@ body{
 .PlateArmorGroup button{
     padding: adjust;
     align-items: center;
+    margin-left: 30px;
+
 }
 .ChainMailGroup img{
     display: block;
@@ -34,6 +38,7 @@ body{
 .ChainMailGroup button{
     padding: adjust;
     align-items: center;
+    margin-left: 30px;
 }
 .CookingPotGroup img{
     display: block;
@@ -41,6 +46,7 @@ body{
 .CookingPotGroup button{
     padding: adjust;
     align-items: center;
+    margin-left: 30px;
 }
 /*This edits all the pictures and buttons*/
 .AllItems{
@@ -78,3 +84,18 @@ p{background-color:antiquewhite;
 h2{background-color:antiquewhite;
     display: inline-block;
     }
+.gotogame {
+    position: relative; /* had clarifications from gemini on how to push button to right*/
+    width: 100%;        /* had clarifications from gemini on how to push button to right*/
+    height: 100px;     /* had clarifications from gemini on how to push button to right*/
+}
+
+
+.gotogame button {
+    position: absolute; /* had clarifications from gemini on how to push button to right*/
+    right: 32px;       /* had clarifications from gemini on how to push button to right*/
+    padding: 32px;
+    font-size: 28px;
+    border-radius: 999px;
+    background-color: rgb(182, 82, 0);
+}

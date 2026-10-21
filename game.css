@@ -4,3 +4,27 @@ h1{
     font-family: fantasy;
     text-align: center;
 }
+h2{
+    color: black;
+    font-size: 36px;
+    font-family: fantasy;
+    text-align: center;
+}
+body{
+    background-image: url(Background2.png);
+}
+#Clicker{
+    display: block; 
+    margin:0 auto;
+    padding: 48px;
+    background-color: gray;
+}
+#Return{
+    display: block;
+    margin:0 auto;
+    padding: 32px;
+    font-size: 28px;
+    border-radius: 999px;
+    background-color:rgb(113, 84, 1);
+
+}
