@@ -1,39 +1,4 @@
-# ku_hsd_2026_23
-<!DOCTYPE html>
-<!--- Hi-->
-<html lang="en"> 
-<head>
-    <meta charset="UTf-8">
-<title> Gunter's Forge</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-    <h1> Welcome to Gunter's Forge</h1>
-    <div class="AllItems">
-    <div class="SwordGroup">
-    <img src="Sword.png"
-    width="208">
-    <button id="Sword_Purchase">Sword</button>
-    </div>
-    <div class="PlateArmorGroup">
-    <img src="PlateArmor.png"
-    width="208">
-    <button id="PlateArmor_Purchase">Plate Armor</button>
-    </div>
-    <div class="ChainMailGroup">
-    <img src="ChainMail.png"
-    width="208">
-    <button id="ChainMail_Purchase">Chain Mail</button>
-    </div>
-    <div class="CookingPotGroup">
-    <img src="CookingPot.png"
-    width="208">
-    <button id="CookingPot_Purchase">Cooking Pot</button>
-    </div>
-</div>
-<a href="To-Do.html">
-<button id="ToDoList">Gunter's To-Do List</button>
-</a>
-</body>
-</html>
+This project depicts Gunter's Blacksmith shop where he sells goods such as swords, platr amors, chain mail, and cooking pots. In this application you have the ability to purchase said items and they will be put on his to-do list for what should be made. Finally, if you purchase 5 items, in which you will recieve a coupon. 
+
+
+For each item, you have the ability to push the button that lets you buy one of that specific item. Once purchased, it is put on the list above that represents Gunter's to-do list. 
