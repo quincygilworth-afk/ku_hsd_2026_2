@@ -65,6 +65,11 @@
             document.getElementId("GoldMessage").style.display = "block";
             alert("Hey hey hey you just got radium! You cannot mine any further because you might die of radium poisoning :/");
         }
+
+        document.getElementById("mine").addEventListener("click", function() {
+        swordCount--;
+        document.getElementById("mine").textContent = mine;
+        })
         
     }
 </script>
