@@ -50,7 +50,7 @@
     function updateTotalMine(){
         mine --;
         document.getElementById("mine").textContent = mine;
-
+// the following code makes it so that if you reach a certain level you will recieve a message about which ores you have mined
         if (mine == 90){
             document.getElementById("CoalMessage").style.display = "block";
             alert("You mined a piece of coal!");
@@ -77,12 +77,12 @@
             alert("Hey hey hey you just got radium! You cannot mine any further because you might die of radium poisoning :/");
         }
         if (mine < 0){
-            mine = 1;
+            mine = 1; // stops the level from going past -1 
         }
     }
 
         document.getElementById("Clicker").addEventListener("click", updateTotalMine);
-    
+    // the above code makes the clicker work 
         
     
 </script>
