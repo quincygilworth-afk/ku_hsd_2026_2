@@ -11,6 +11,10 @@
     <h1> Welcome to Gunter's Forge</h1>
     <h2>Gunter's To - Do List: <span id="OrderCount">0</span></h2>
     <div class="OrderCounts">
+     <p id="CouponMessage" style="display: none;">
+    🎉 Congratulations! You've reached 5 total orders
+    and earned a coupon!
+</p>
     <p>Swords ordered: <span id="SwordCount">0</span></p>
     <p>Plate Armor ordered: <span id="PlateArmorCount">0</span></p>
     <p>Chain Mail ordered: <span id="ChainMailCount">0</span></p>
@@ -51,9 +55,17 @@
     let chainMailCount = 0;
     let cookingPotCount = 0;
 
-    function updateGuntersToDoList() {
+    function updateTotalOrders() {
         orderCount++;
+
         document.getElementById("OrderCount").textContent = orderCount;
+
+        // Show the coupon message when total orders reach 5
+        if (orderCount === 5) {
+            document.getElementById("CouponMessage").style.display = "block";
+
+            alert("Congratulations! You've earned a coupon!");
+        }
     }
 
     document.getElementById("Sword_Purchase").addEventListener("click", function() {
@@ -79,6 +91,7 @@
         document.getElementById("CookingPotCount").textContent = cookingPotCount;
         updateTotalOrders();
     });
+    
 
 </script>
 
