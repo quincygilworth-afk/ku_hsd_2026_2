@@ -9,7 +9,13 @@
 <body>
     
     <h1> Welcome to Gunter's Forge</h1>
-    <h2>Orders: <span id="OrderCount">0</span></h2>
+    <h2>Total Orders: <span id="OrderCount">0</span></h2>
+    <div class="OrderCounts">
+    <p>Swords ordered: <span id="SwordCount">0</span></p>
+    <p>Plate Armor ordered: <span id="PlateArmorCount">0</span></p>
+    <p>Chain Mail ordered: <span id="ChainMailCount">0</span></p>
+    <p>Cooking Pots ordered: <span id="CookingPotCount">0</span></p>
+</div>
     <div class="AllItems">
     <div class="SwordGroup">
     <img src="Sword.png"
@@ -39,14 +45,40 @@
 <script>
     let orderCount = 0;
 
-    function addOrder() {
+    // Keep track of each item's orders
+    let swordCount = 0;
+    let plateArmorCount = 0;
+    let chainMailCount = 0;
+    let cookingPotCount = 0;
+
+    function updateTotalOrders() {
         orderCount++;
         document.getElementById("OrderCount").textContent = orderCount;
     }
 
-    document.getElementById("Sword_Purchase").addEventListener("click", addOrder);
-    document.getElementById("PlateArmor_Purchase").addEventListener("click", addOrder);
-    document.getElementById("ChainMail_Purchase").addEventListener("click", addOrder);
-    document.getElementById("CookingPot_Purchase").addEventListener("click", addOrder);
+    document.getElementById("Sword_Purchase").addEventListener("click", function() {
+        swordCount++;
+        document.getElementById("SwordCount").textContent = swordCount;
+        updateTotalOrders();
+    });
+
+    document.getElementById("PlateArmor_Purchase").addEventListener("click", function() {
+        plateArmorCount++;
+        document.getElementById("PlateArmorCount").textContent = plateArmorCount;
+        updateTotalOrders();
+    });
+
+    document.getElementById("ChainMail_Purchase").addEventListener("click", function() {
+        chainMailCount++;
+        document.getElementById("ChainMailCount").textContent = chainMailCount;
+        updateTotalOrders();
+    });
+
+    document.getElementById("CookingPot_Purchase").addEventListener("click", function() {
+        cookingPotCount++;
+        document.getElementById("CookingPotCount").textContent = cookingPotCount;
+        updateTotalOrders();
+    });
 </script>
+
 </html>
