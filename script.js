@@ -84,7 +84,7 @@ displayOrders("todo-list", true);
 displayOrders("gunter-orders", true);
 
 // Order Queue: show every order and its position in line
-// (the orders array in localStorage IS the queue: first order = #1 in line)
+// the orders array in localStorage IS the queue: first order = #1 in line
 function displayQueue(listId) {
     const list = document.getElementById(listId);
 
