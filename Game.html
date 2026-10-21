@@ -11,6 +11,8 @@
     <div class="Inv">
         <p> Inventory: </p>
         <br>
+        <h2> You are at level : <span id="mine">100</span></h2>
+        <h3> Click the button</h3>
         <p id="CoalMessage" style="display: none;">
     You mined a piece of coal!
 </p>
@@ -61,7 +63,7 @@
     function updateTotalMine(){
         mine --;
         document.getElementById("mine").textContent = mine;
-
+// the following code makes it so that if you reach a certain level you will recieve a message about which ores you have mined
         if (mine == 90){
             document.getElementById("CoalMessage").style.display = "block";
             alert("You mined a piece of coal!");
@@ -87,10 +89,13 @@
             document.getElementById("RadiumMessage").style.display = "block";
             alert("Hey hey hey you just got radium! You cannot mine any further because you might die of radium poisoning :/");
         }
+        if (mine < 0){
+            mine = 1; // stops the level from going past -1 
+        }
     }
 
         document.getElementById("Clicker").addEventListener("click", updateTotalMine);
-    
+    // the above code makes the clicker work 
         
     
 </script>
