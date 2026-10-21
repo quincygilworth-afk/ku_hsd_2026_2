@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Welcome To Gunter's Mining Game</h1>
-        <h2> Click The Button : <span id="mine">0</span></h2>
+        <h2> Click The Button : <span id="mine">100</span></h2>
         <p id="CoalMessage" style="display: none;">
     You mined a piece of coal!
 </p>
@@ -41,35 +41,34 @@
         document.getElementById("mine").textContent = mine;
 
         if (mine == 90){
-            document.getElementId("CoalMessage").style.display = "block";
+            document.getElementById("CoalMessage").style.display = "block";
             alert("You mined a piece of coal!");
         }
         if (mine == 80){
-            document.getElementId("IronMessage").style.display = "block";
+            document.getElementById("IronMessage").style.display = "block";
             alert("Yo yo yo u just got iron twin!");
         }
 
         if (mine == 65){
-            document.getElementId("GoldMessage").style.display = "block";
+            document.getElementById("GoldMessage").style.display = "block";
             alert("You just mined gold!");
         }
         if (mine == 50){
-            document.getElementId("GoldMessage").style.display = "block";
+            document.getElementById("EmeraldMessage").style.display = "block";
             alert("Green green green, you just mined emerald!");
         }
         if (mine == 25){
-            document.getElementId("GoldMessage").style.display = "block";
+            document.getElementById("DiamondMessage").style.display = "block";
             alert("Omg you just got some diamonds, now go and do something supper tuff like get diamond grill everyone will think you're so cool!");
         }
         if (mine == 0){
-            document.getElementId("GoldMessage").style.display = "block";
+            document.getElementById("RadiumMessage").style.display = "block";
             alert("Hey hey hey you just got radium! You cannot mine any further because you might die of radium poisoning :/");
         }
-
-        document.getElementById("mine").addEventListener("click", function() {
-        swordCount--;
-        document.getElementById("mine").textContent = mine;
-        })
-        
     }
+
+        document.getElementById("Clicker").addEventListener("click", updateTotalMine);
+    
+        
+    
 </script>
