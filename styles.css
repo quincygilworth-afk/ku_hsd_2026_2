@@ -1,0 +1,76 @@
+h1{
+    text-align: center;
+    color: rgb(247, 193, 0);
+    font-size: 48px;
+    font-family:fantasy;
+}
+body{
+    background-image: url(Background.png);
+}
+
+#Sword_Purchase{
+    padding: 30px;
+    font-size: 42px;
+    font-family: Georgia;
+    background-color: rgb(247, 193, 0);
+    border-color: black;
+    border-radius: 999px;
+}
+#PlateArmor_Purchase{
+    padding: 30px;
+    font-size: 42px;
+    font-family: Georgia;
+    background-color: rgb(247, 193, 0);
+    border-color: black;
+    border-radius: 999px;
+}
+#ChainMail_Purchase{
+    padding: 30px;
+    font-size: 42px;
+    font-family: Georgia;
+    background-color: rgb(247, 193, 0);
+    border-color: black;
+    border-radius: 999px;
+}
+#CookingPot_Purchase{
+    padding: 30px;
+    font-size: 42px;
+    font-family: Georgia;
+    background-color: rgb(247, 193, 0);
+    border-color: black;
+    border-radius: 999px;
+}
+
+.SwordGroup img{
+    display: block;
+}
+.SwordGroup button{
+    padding: adjust;
+    align-items: center;
+}
+.PlateArmorGroup img{
+    display: block;
+}
+.PlateArmorGroup button{
+    padding: adjust;
+    align-items: center;
+}
+.ChainMailGroup img{
+    display: block;
+}
+.ChainMailGroup button{
+    padding: adjust;
+    align-items: center;
+}
+.CookingPotGroup img{
+    display: block;
+}
+.CookingPotGroup button{
+    padding: adjust;
+    align-items: center;
+}
+.AllItems{
+    display:flex;
+    gap: 64px;
+    align-items: center;
+}
