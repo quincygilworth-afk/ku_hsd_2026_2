@@ -7,7 +7,7 @@ For each item, you have the ability to push the button that lets you buy one of 
 
 ## Setup:
 
-Go to your local browser and open website. 
+Open the index.html page in your broswer to open the website. You can find the index.html file within the shared folder: ku_hsd_2026_2
 
 
 ## Game:
