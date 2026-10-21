@@ -1,37 +1,44 @@
+/* modifies h1 */
 h1{
     color: black;
     font-size: 48px;
     font-family: fantasy;
     text-align: center;
 }
+/* modifies h2 */
 h2{
     color: black;
     font-size: 36px;
     font-family: fantasy;
     text-align: center;
 }
+/* modifies body/background */
 body{
     background-image: url(Background2.png);
 }
+/* modifies clicker button */
 #Clicker{
-    display: block; 
-    margin:0 auto;
+    display: block; /* had help from Ai to get it in correct spot */
+    margin:0 auto;  /* had help from Ai to get it in correct spot */
     padding: 48px;
     background-color: gray;
 }
+/* modifies return to home page button */
 #Return{
-    display: block;
-    margin:0 auto;
+    display: block; /* had help from Ai to get it in correct spot */
+    margin:0 auto; /* had help from Ai to get it in correct spot */
     padding: 32px;
     font-size: 28px;
     border-radius: 999px;
     background-color:rgb(113, 84, 1);
 
 }
+/* edits the inventory where it says wht you have obtain from the game*/
 .Inv {
-  height: 350px;
-  overflow-y: auto;
+  height: 350px; /* makes text box 350px tall */
+  overflow-y: auto; /*gives scroll bar */
 }
+/*modifies inventory text*/
 p{
     color: white;
     font-size: 24px;
